@@ -1,0 +1,7 @@
+name: workstations
+version: 1.0.0
+main: com.prygin.workstations.Workstations
+authors:
+  - Prygin
+api-version: '1.21.7'
+
