@@ -35,8 +35,11 @@ public final class Workstations extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        // Register Listener
+        getServer().getPluginManager().registerEvents(new Listener(), this);
+
         // Create Custom Items
-        createItem("§fTest Item", "test_item", Material.PAPER, null);
+        createItem("§fTest Item", "test_item", Material.PAPER, "test_item");
 
         this.getServer().getCommandMap().register("customitem", new giveCustomBlockCommand(this));
 
